@@ -2,14 +2,11 @@
 #include <cmath>
 using namespace std;
 
-double deg2rad(double x){
-    return M_PI*x/180.0;
+double deg2rad(double a1){
+    return M_PI*a1/180.0;
 }
-/// @brief 
-/// @param y 
-/// @return 
-double rad2deg(double y){
-    return 180.0*y/M_PI;
+double rad2deg(double a2){
+    return 180.0*a2/M_PI;
 }
 double findXComponent(double l1,double l2,double a1,double a2){
     return l1*cos(a1)+l2*cos(a2);
@@ -29,7 +26,7 @@ void showResult(double result_vec_length,double result_vec_direction){
 }
 
 int main(){
-    double x,y,l1,l2,a1,a2,xcomp,ycomp,result_vec_length,result_vec_direction;
+    double l1,l2,a1,a2,xcomp,ycomp,result_vec_length,result_vec_direction;
     cout << "Enter length of the first vector: ";
     cin >> l1;
     cout << "Enter direction of the first vector (deg): ";
